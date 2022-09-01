@@ -1,0 +1,90 @@
+@font-face {
+    src: url(/fonts/GamestationExtended-9qv7.otf);
+    font-family: ex;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#1F1F1F ;
+} 
+
+header{
+    
+    .logo{
+        padding-top:20px ;
+        height: 130px;
+        width:100%;
+        background-color:#00439C;
+        text-align: center;
+    img{
+        height: 100px;
+    }
+    position: relative;
+    
+}
+}
+
+.support{
+    img{
+    height: 50px;
+}   
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+form{
+    color: white;
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+    font-family:ex;
+
+    fieldset{
+        padding: 40px;
+        text-align: center;
+
+        legend{
+            font-size: large;
+        }
+    
+    
+    }
+
+
+
+        a{
+
+            color: white;
+            text-decoration: none;
+            color: white;
+        padding: 5px 15px 5px 15px;
+        text-align: center;
+        border: 1px solid #0070D1; 
+        border-radius: 20px;
+        background-color:  #326DB3;
+        }
+    
+
+    .rme{
+        margin-top: 10px;
+
+    }
+
+    .pass{
+        margin-bottom: 30px;
+    }
+
+    
+}
+
+
+
+
+
+

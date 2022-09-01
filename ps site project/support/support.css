@@ -1,0 +1,41 @@
+@font-face {
+  src: url(/fonts/GamestationExtended-9qv7.otf);
+  font-family: ex;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header .logo {
+  padding-top: 20px;
+  height: 130px;
+  width: 100%;
+  background-color: #00439C;
+  text-align: center;
+  position: relative;
+}
+header .logo img {
+  height: 100px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  border-bottom: 1px solid #0070D1;
+  border-bottom-left-radius: 60%;
+  border-bottom-right-radius: 60%;
+  background-color: #1F1F1F;
+  padding: 10px;
+}
+nav img {
+  height: 50px;
+}
+nav .support {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}/*# sourceMappingURL=support.css.map */
