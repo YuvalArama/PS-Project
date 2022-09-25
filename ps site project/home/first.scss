@@ -9,7 +9,8 @@
 }
 
 body{
-    background-color: #0172D0;
+    background-color: #0173d0bb;
+    font-family: ex;
 }
 
 header{
@@ -30,7 +31,7 @@ header{
 
 
 nav{
-ul{
+.pic{
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -38,7 +39,7 @@ ul{
     border-bottom:1px solid #0070D1 ;
     border-bottom-left-radius:60% ;
     border-bottom-right-radius:60% ;
-    background-color:#1F1F1F;
+    background-color:#1f1f1fd4;
     padding: 10px;
 
     
@@ -61,62 +62,114 @@ ul{
         top: 10px;
         right:10px;    
     }
-}
 
-.container{
-    margin-top: 100px;
-    gap: 30px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        
-
-
-    .col{
-        border:10px solid #1f1f1f91;
-        border-radius: 50px;
-        background-color:#ffff;
-        height:500px;
-        width:calc(70% - 20px);
-        gap: 70px;
-        position: relative;
-        flex-direction: column;
-
-        .content{
-            padding: 25px;
-        }
-
-        
-
-    button{
-        height: 50px;
-        width: 100px;
-        border-radius: 10px;
-        background-color: #0070D1;
-        color: white;
-        margin-top: 150px;
-        
-    }        
-        
-        
-        
-
-        img{ 
-            width: 400px;
-            position: absolute;
-            right: 20px;
-           top: 40px;
-           bottom: 0;
-        }
-
-        h1{
-            display: flex;
-            font-family: ex;
-            margin-bottom: 100px;
-            
-    
-        }
-
+    input{
+        display: none;
     }
 
+    label{
+       img{
+        display: none;
+       }
+    }
+}
+.wor{
+    display: none;
+}
+
+.smallLogo{
+    display: none;
+}
+
+
+@media screen and (max-width: 815px){
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+
+        .smallLogo{
+            display: unset;
+            height: 130px;
+            width:100%;
+            background-color:#00439C;
+            text-align: center;
+        img{
+            height: 130px;
+        }
+    }
+
+        .pic{
+            display: none;
+        }
+
+        .ssmenu{
+            min-height: 150px;
+            background-color: #1f1f1f95;
+            border:solid 1px #1F1F1F;
+            border-bottom-left-radius:30% ;
+            border-bottom-right-radius:30% ; 
+            font-family: ex;
+
+            .wor{
+
+                display: unset;  
+                height: 1000px;
+                padding: 5px;
+                
+                
+
+                h3{
+                    text-align: center;
+                    color: #1F1F1F;
+                    background-color: #0070D1;
+                    border:solid 4px #00439C ;
+                    border-radius: 15px;
+                    margin: 0 100px 10px 100px;
+                    padding: 10px;
+
+                   
+                }
+                .logout{
+                    text-decoration: none;
+                }
+
+                h3:hover{
+                    background-color: #00439C;
+                    cursor: pointer;
+                }
+
+            }
+
+        }
+    
+
+        label{
+            img{
+                display: unset;
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                height: 40px;
+            }
+        }
+     
+        .collapse{
+            flex-basis: 100%;
+            max-height: 0;
+            overflow: hidden;
+        }
+
+        input:checked ~ .collapse{
+            max-height: unset;
+        }
+    }
+
+
+    .logo{
+        display: none;
+    }
+
+    
 }

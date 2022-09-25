@@ -1,0 +1,93 @@
+@font-face {
+    src: url(/fonts/GamestationExtended-9qv7.otf);
+    font-family: ex;
+}
+
+#container{
+    text-align: center;
+    img{
+        width:350px;
+        height:350px ;
+        
+    } 
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+.col{
+    border: 2px solid blue;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    min-height: 360px;
+    min-width: 360px;
+    padding: 10px;
+    position: relative;
+    
+
+}
+.formCol{
+    border: 2px solid blue;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    min-height: 360px;
+    min-width: 360px;
+    padding: 10px;
+    position: relative;
+    
+}
+
+.inputs{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
+
+    #submit{
+        padding: 5px 20px 5px 20px ;
+        border-radius: 10px;
+        color:whitesmoke;
+        background-color:#00256e ;
+        
+    }
+    
+}
+
+@keyframes colortransition2 {
+    from{background-color: #CD3D0F;}
+    to{background-color:#00256e;}
+}
+
+@keyframes locaitiontransition {
+    from{background-color: #CD3D0F;}
+    to{background-color:#00256e;}
+}
+
+h2{
+    font-family: ex;
+    position: absolute;
+    display: none;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 45%;
+
+}
+
+.col:hover{
+    animation-name: colortransition2;
+    animation-duration: 2s;
+    background-color:#00256e;
+    cursor: pointer;
+    h2{
+        background-color:#00256e;
+        color: whitesmoke;
+        display: unset;
+        animation-name: locaitiontransition;
+        animation-duration:2s;
+    }
+}
